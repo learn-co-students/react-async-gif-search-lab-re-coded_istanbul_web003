@@ -13,7 +13,7 @@ export default class GifListContainer extends Component {
           .then(response => response.json())
           .then(data => {
             this.setState({
-              gifData: data
+              gifData: data.slice(0,3)
             })
           })
       }
